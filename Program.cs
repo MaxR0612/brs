@@ -4,9 +4,11 @@ namespace ConsoleApp2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            public static void grading()
+            counter();
+        }
+        public static void grading()
             {
                 Console.WriteLine("Enter the score you reached. max 60 points");
                 int score = Convert.ToInt32(Console.ReadLine());
@@ -18,7 +20,7 @@ namespace ConsoleApp2
                 if (score <= lowestscore)
                 {
                     Note = 5;
-                    Console.WriteLine("durchgefallen idiot");
+                    Console.WriteLine("durchgefallen");
                 }
                 else if (score >= MaximumPoints)
                 {
@@ -30,9 +32,18 @@ namespace ConsoleApp2
                     Note = Note + 0.1D;
                 }
             } 
-           
+        public static void grading2()
+            {
+                
+                
+                
+                Console.WriteLine("Enter reached Points");
+
+
+            }
+       //test
 
             
-        }
+        
     }
 }
